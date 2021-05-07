@@ -27,7 +27,16 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+      
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+          fonts: [
+              `poppins:300,400,500,600,700`       
+          ], display: 'swap'       
+      }
+  },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
