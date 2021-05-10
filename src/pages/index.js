@@ -6,7 +6,7 @@ const IndexPage = () => {
   return (
     <div>
       <Layout>
-        <Product/>
+         <Product/>
       </Layout>
     </div>
   )
