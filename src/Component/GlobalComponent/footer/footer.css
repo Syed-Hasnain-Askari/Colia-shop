@@ -1,8 +1,7 @@
 *{
-    font-family: "Poppins";
+    font-family: "poppins";
     line-height: 22px;
     font-weight: 400;
-    font-style: normal;
 }
 #footer{
     background-color: black;
@@ -66,7 +65,6 @@ a>font{
     padding: 5px 0;
     color:#767676;
     text-decoration: none;
-    font-family: "poppins"
 }
 .textwidget{
     /* border: 1px solid red; */

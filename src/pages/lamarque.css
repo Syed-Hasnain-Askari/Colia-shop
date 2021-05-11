@@ -1,9 +1,8 @@
-.LaMarque{
-    border: 1px solid red
-}
 .about__section{
-    margin-top: 200px;
+    padding-top: 200px;
     border: 1px solid green;
+    z-index: 50;
+    display: flex;
 }
 .sociallink__wrapper{
     width: 100%;
@@ -17,5 +16,10 @@
 }
 .about__sociallink li{
     border-radius: 100%;
+    width: 40px;
+    height: 40px;
     border: 1px solid #ccc;
+}
+.about__sociallink li .icon{
+    margin: auto 3px;
 }

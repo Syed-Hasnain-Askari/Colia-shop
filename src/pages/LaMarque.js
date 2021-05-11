@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../Component/layout'
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import {
   faFacebook,
   faInstagram,
@@ -21,7 +22,7 @@ export default function LaMarque() {
                     <div className="row  mx-auto mt-auto">
                         <div className="col-xl-6 col-lg-6 col-sx-12 d-flex justify-content-end">
                         <StaticImage
-                        src="../images/image.png"
+                        src="../assets/images/image.png"
                         quality={95}
                         formats={["AUTO", "WEBP", "AVIF"]}
                         alt="A Gatsby astronaut"
@@ -56,6 +57,7 @@ export default function LaMarque() {
                                     icon={faYoutube}
                                     color="yellow"
                                     size="1x"
+                                    className="icon"
                                     />
                                     </li>
                                     <li className="p-lg-2 mx-sm-1">
@@ -63,6 +65,7 @@ export default function LaMarque() {
                                     icon={faFacebook}
                                     color="yellow"
                                     size="1x"
+                                    className="icon"
                                     /> 
                                     </li>
                                     <li className="p-lg-2 mx-sm-1">
@@ -70,6 +73,7 @@ export default function LaMarque() {
                                     icon={faInstagram}
                                     color="yellow"
                                     size="1x"
+                                    className="icon"
                                     /> 
                                     </li>
                                 </ul>
@@ -78,7 +82,7 @@ export default function LaMarque() {
                         </div>
                         <div className="col-xl-6 col-lg-6 col-sx-12 m-lg-5 ">
                         <StaticImage
-                        src="../images/image1.jpg"
+                        src="../assets/images/image1.jpg"
                         width={500}
                         height={800}
                         quality={95}

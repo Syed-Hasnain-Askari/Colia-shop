@@ -1,12 +1,12 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../Component/layout'
 import Product from '../Component/Products/product'
+import Carousal from '../Component/Carousal/Carousal'
 const IndexPage = () => {
   return (
     <div>
       <Layout>
-         <Product/>
+        <Product/>
       </Layout>
     </div>
   )

@@ -1,0 +1,147 @@
+.navbar__wrapper{
+    width: 100%;
+    height: auto;
+    color: #eee;
+    background-color: #000;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    transition: 1s;
+    position: sticky;
+}
+
+.navbar__wrapper span:hover {
+    color:sandybrown;
+}
+
+.navbar__header {
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.left__sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.left__sec span {
+    padding-right: 35px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -150px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 183px;
+    height: 42px;
+}
+
+.right__sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.right__sec > .MuiSvgIcon-root {
+    margin-right: 18px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.navbar__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+}
+
+.navbar__nav span {
+    margin-right: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.navbar2__wrapper {
+    width: 100%;
+    height: auto;
+    color: #eee;
+    background-color: #000;
+    text-transform: uppercase;   
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: .5s;
+}
+.navbar2__wrapper:hover span {
+    color: sandybrown;
+}
+.nav__scroll {
+    position: fixed;
+    transition: 1s;
+}
+
+.leftSec__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.leftSec__logo img {
+    display: flex;
+    width: 100px;
+}
+
+.middle__sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle__sec span {
+    margin-right: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.d__btn:hover .dropdown{    
+    transition: 2.5s;
+    display: flex;
+    margin: 0 auto;
+}
+
+.d__btn:not(:hover) .dropdown {
+    transition: 2.5s;
+}
+.d__btn2:hover .dropdown2{
+    transition: 2.5s;
+    display: flex;
+    margin: 0 auto;
+}
+.rightSec__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;   
+}
+
+.rightSec__icons > .MuiSvgIcon-root {
+    margin-right: 18px;
+    font-size: 22px;
+}

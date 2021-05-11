@@ -1,35 +1,45 @@
 import React from 'react'
-import image1 from '../../images/Product1.png'
-import image2 from '../../images/Product2.png'
-import image3 from '../../images/Product3.png'
-import image4 from  '../../images/Product4.png'
+import image1 from '../../assets/images/product_images/Product1.png'
+import image2 from '../../assets/images/product_images/Product2.png'
+import image3 from '../../assets/images/product_images/Product3.png'
+import image4 from  '../../assets/images/product_images/Product4.png'
+import image5 from  '../../assets/images/product_images/robe-Nalya.jpeg'
+import { StaticImage } from "gatsby-plugin-image"
 import './product.css';
 export default function Products() {
     return (
-      <div className="hero container">
-      <div className="row d-flex justify-content-lg-between">
+      <div className="hero">
+       <div className="container__wrapper">
+       <div className="container">
+        <div className="row d-flex justify-content-lg-between">
         <div className="col">
-          <div className="slider border">
-            <div className="product border">
+          <div className="slider">
+            <div className="product">
                 <div className="row d-flex justify-content-center">
-                    <div className="col">
-                         <img src={image1}></img>
+                    <div className="col border-dark">
+                         <img src={image1} className="img-fluid"></img>
                     </div>
                 </div>
                 <div className="row d-flex justify-content-center">
                     <div className="col">
-                        <img src={image2}></img>
+                        <img src={image2} className="img-thumbnail"></img>
                     </div>
                 </div>
                 <div className="row">
                 <div className="col">
-                        <img src={image2}></img>
+                        <img src={image2} className="img-thumbnail"></img>
                     </div>
                 </div>
             </div>
             <div className="col">
-                <div className="preview border">
-                    <img src={image1}></img>
+                <div className="preview">
+                <StaticImage
+                        src="../../assets/images/product_images/robe-Nalya.jpeg"
+                        quality={95}
+                        formats={["AUTO", "WEBP", "AVIF"]}
+                        alt="A Gatsby astronaut"
+                        style={{ marginBottom: `1.5rem` }}
+                        />
                 </div>
             </div>
           </div>
@@ -60,11 +70,11 @@ export default function Products() {
         </div>
       </div>
       <div className="related">
-        <h2>related items</h2>
-        <div className="row">
-          <div className="columns">
+        <h2 className="text-center">related items</h2>
+        <div className="row d-flex justify-content-center mx-auto">
+          <div className="product__item">
             <div className="items">
-              <img src={image1} alt="" />
+              <img src={image1} alt="" className="img-fluid" />
               <div className="details">
                 <p>Woman Brown Solid Biker Jacket</p>
                 {/* <div className="rating">
@@ -78,9 +88,9 @@ export default function Products() {
               </div>
             </div>
           </div>
-          <div className="columns">
+          <div className="product__item">
             <div className="items">
-              <img src={image3} alt="" />
+              <img src={image3} alt="" className="img-fluid" />
               <div className="details">
                 <p>Navy Blue Flared Palazzos</p>
                 {/* <div className="rating">
@@ -95,9 +105,9 @@ export default function Products() {
             </div>
           </div>
 
-          <div className="columns">
+          <div className="product__item">
             <div className="items">
-              <img src={image4} alt="" />
+              <img src={image4} alt=""  />
               <div className="details">
                 <p>Printed Straight Kurta</p>
                 {/* <div className="rating">
@@ -113,6 +123,8 @@ export default function Products() {
           </div>
         </div>
       </div>
+        </div>
+       </div>
     </div>
     )
 }
