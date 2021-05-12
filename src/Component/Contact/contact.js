@@ -12,20 +12,21 @@ class ContactPage extends React.Component {
   render() {
     return (
           <div className="contact__wrapper">
-          <div className="container">
+          <div className="container pt-lg-5">
                 <div className="row d-flex justify-content-center">
-                    <h1 className="text-center">Nos horaires d'ouvertures</h1>
-                    <div className="col-xl-6 col-lg-6 col-sm-12">
+                    <h1 className="text-center mt-5">Nos horaires d'ouvertures</h1>
+                    <div className="col-xl-6 col-lg-6 col-sm-12 mt-lg-5 mt-5">
                     <Accordion
                     className="accordion"
                     selectedIndex={this.state.selectedIndex}
                     onChange={(index, expanded, selectedIndex) => console.log(`#${index} ${expanded ? 'expanded' : 'collapsed'} (selectedIndex: ${selectedIndex})`)}
                       >
-          <div data-header="Geneve" className="accordion-item">
+             <div data-header="Geneve" className="accordion-item">
             <p>
               <img
                 src="http://www.emilpalsson.com/react-tiny-accordion-demo1.jpg"
                 alt="Demo"
+                className="contact__image"
               />
               Quisque molestie luctus erat a sagittis. Praesent blandit, arcu
               sed dictum ornare, metus lorem faucibus enim, sit amet molestie
@@ -67,7 +68,7 @@ class ContactPage extends React.Component {
           </div>
         </Accordion>
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-sm-12 mt-lg-5">
+                    <div className="col-xl-6 col-lg-6 col-sm-12 mt-lg-5 mt-5">
                         <MapChart/>
                     </div>
                 </div>

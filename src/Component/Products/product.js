@@ -1,130 +1,111 @@
-import React from 'react'
-import image1 from '../../assets/images/product_images/Product1.png'
-import image2 from '../../assets/images/product_images/Product2.png'
-import image3 from '../../assets/images/product_images/Product3.png'
-import image4 from  '../../assets/images/product_images/Product4.png'
-import image5 from  '../../assets/images/product_images/robe-Nalya.jpeg'
+import React, { useState } from "react"
+import image1 from "../../assets/images/product_images/Product1.png"
+import image2 from "../../assets/images/product_images/Product2.png"
+import image3 from "../../assets/images/product_images/Product3.png"
+import image4 from "../../assets/images/product_images/Product4.png"
+import ReactImageMagnify from 'react-image-magnify';
+import { Image, Col, Row } from "react-bootstrap"
+import image5 from "../../assets/images/product_images/robe-Nalya.jpeg"
 import { StaticImage } from "gatsby-plugin-image"
-import './product.css';
+import "./product.css"
 export default function Products() {
-    return (
-      <div className="hero">
-       <div className="container__wrapper">
-       <div className="container">
-        <div className="row d-flex justify-content-lg-between">
-        <div className="col">
-          <div className="slider">
-            <div className="product">
-                <div className="row d-flex justify-content-center">
-                    <div className="col border-dark">
-                         <img src={image1} className="img-fluid"></img>
-                    </div>
-                </div>
-                <div className="row d-flex justify-content-center">
-                    <div className="col">
-                        <img src={image2} className="img-thumbnail"></img>
-                    </div>
-                </div>
-                <div className="row">
-                <div className="col">
-                        <img src={image2} className="img-thumbnail"></img>
-                    </div>
-                </div>
-            </div>
-            <div className="col">
-                <div className="preview">
-                <StaticImage
-                        src="../../assets/images/product_images/robe-Nalya.jpeg"
-                        quality={95}
-                        formats={["AUTO", "WEBP", "AVIF"]}
-                        alt="A Gatsby astronaut"
-                        style={{ marginBottom: `1.5rem` }}
-                        />
-                </div>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="content">
-            <p className="brand">Brand: Varanga</p>
-            <h2>Woman Black Quirky Print Empire Dress</h2>
-            {/* <div className="rating">
-              <i className="fa fa-star" />
-              <i className="fa fa-star" />
-              <i className="fa fa-star" />
-              <i className="fa fa-star" />
-              <i className="fa fa-star-half-o" />
-            </div> */}
-            <p className="price">Brand: Varanga</p>
-            <p>Size: <select name="size">
-                <option value="select size">select size</option>
-                <option value="small">small</option>
-                <option value="medium">medium</option>
-                <option value="large">large</option>
-              </select></p>
-            <p>Quantity: <input type="text" defaultValue={1} /></p>
-            <button type="button">
-              {/* <i className="fa fa-shopping-cart" /> */}
-              Add to cart</button>
-          </div>
-        </div>
-      </div>
-      <div className="related">
-        <h2 className="text-center">related items</h2>
-        <div className="row d-flex justify-content-center mx-auto">
-          <div className="product__item">
-            <div className="items">
-              <img src={image1} alt="" className="img-fluid" />
-              <div className="details">
-                <p>Woman Brown Solid Biker Jacket</p>
-                {/* <div className="rating">
-                  <i className="fa fa-star" />
-                  <i className="fa fa-star" />
-                  <i className="fa fa-star" />
-                  <i className="fa fa-star" />
-                  <i className="fa fa-star-half-o" />
-                </div> */}
-                <p>USD $120.00</p>
+  const [selectedItem, setSelectedItem] = useState(image1)
+  return (
+         <div className="container">
+            <div className="row d-flex justify-content-center">
+              <div className="col-xl-12 col-xs-12 col-lg-12">
+              <Row className="m-0 border">
+              <Col xl={6} lg={6} md={6} sm={6} xs={6} className="left__gallery">
+                <Row className="">
+                  <Col xl={2} lg={2} md={4} sm={4} xs={4}>
+                    <Image
+                      src={image1}
+                      style={{
+                        width: 150,
+                        height: 130,
+                        objectFit: "contain",
+                        marginTop: "20px",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => {
+                        setSelectedItem(image1)
+                      }}
+                    />
+                    <Image
+                      src={image2}
+                      style={{
+                        width: 150,
+                        height: 130,
+                        objectFit: "contain",
+                        marginTop: "20px",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => {
+                        setSelectedItem(image2)
+                      }}
+                    />
+                    <Image
+                      src={image3}
+                      style={{
+                        width: 150,
+                        height: 130,
+                        objectFit: "contain",
+                        marginTop: "20px",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => {
+                        setSelectedItem(image3)
+                      }}
+                    />
+                    <Image
+                      src={image4}
+                      style={{
+                        width: 150,
+                        height: 130,
+                        objectFit: "contain",
+                        marginTop: "20px",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => {
+                        setSelectedItem(image4)
+                      }}
+                    />
+                  </Col>
+                  <Col xl={4} lg={4} md={4} sm={4} xs={4} className="preview">
+                    <Image
+                      src={selectedItem}
+                      style={{
+                        width: 500,
+                        height: 500,
+                        objectFit: "contain",
+                      }}
+                    />
+                  </Col>
+                </Row>
+              </Col>
+              <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+                <Row>
+                  <div className="product__title">
+                      <h4>Robe Escondida</h4>
+                  </div>
+                </Row>
+                <Row>
+                  <div className="product__costsection d-flex justify-content-between">
+                  <div className="product__cost">
+                      <del>65.96</del>
+                  </div>
+                  <div className="product__discount">
+                  <span class="woocommerce-Price-currencySymbol">$</span>&nbsp;39.52
+                  </div>
+                  </div>
+                  <div className="price">
+                      <h5></h5>
+                  </div>
+                </Row>
+              </Col>
+            </Row>
               </div>
             </div>
-          </div>
-          <div className="product__item">
-            <div className="items">
-              <img src={image3} alt="" className="img-fluid" />
-              <div className="details">
-                <p>Navy Blue Flared Palazzos</p>
-                {/* <div className="rating">
-                  <i className="fa fa-star" />
-                  <i className="fa fa-star" />
-                  <i className="fa fa-star" />
-                  <i className="fa fa-star-half-o" />
-                  <i className="fa fa-star-o" />
-                </div> */}
-                <p>USD $80.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="product__item">
-            <div className="items">
-              <img src={image4} alt=""  />
-              <div className="details">
-                <p>Printed Straight Kurta</p>
-                {/* <div className="rating">
-                  <i className="fa fa-star" />
-                  <i className="fa fa-star" />
-                  <i className="fa fa-star" />
-                  <i className="fa fa-star-half-o" />
-                  <i className="fa fa-star-o" />
-                </div> */}
-                <p>USD $100.00</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        </div>
-       </div>
-    </div>
-    )
+         </div>
+  )
 }

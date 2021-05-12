@@ -98,9 +98,22 @@
 
 }
 .inner h3 {
+    text-decoration: none;
     margin-top: 20px;
+    font-family: "poppins";
+    font-weight: 700;
+    font-size: 15px;
+    color: #696969;
+    font-style: normal;
 }
 
 .inner h4 {
-    margin-top: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-family: "poppins";
+    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 700;
+    color: #333;
 }

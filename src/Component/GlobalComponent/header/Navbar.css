@@ -1,12 +1,13 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
 .navbar__wrapper{
     width: 100%;
     height: auto;
     color: #eee;
     background-color: #000;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: "poppins";
     transition: 1s;
-    position: sticky;
+    z-index: 10;
 }
 
 .navbar__wrapper span:hover {
@@ -144,4 +145,9 @@
 .rightSec__icons > .MuiSvgIcon-root {
     margin-right: 18px;
     font-size: 22px;
+}
+span{
+    text-decoration: none;
+    color: white;
+    border: none;
 }

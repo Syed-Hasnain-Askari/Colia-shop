@@ -48,7 +48,7 @@ function Navbar() {
               <DropdpwnTypeOne />
             </span>
             <Link to="/LaMarque"><span>LA MARQUE</span></Link>
-            <span>stores</span>
+            <Link to="/Contact"><span>MAGASINS</span></Link>
           </div>
           <div className="rightSec__icons">
             <SearchIcon />
@@ -87,7 +87,7 @@ function Navbar() {
               <DropdpwnTypeOne />
             </span>
             <Link to="/LaMarque"><span>LA MARQUE</span></Link>
-            <span>stores</span>
+            <Link to="/Contact"><span>MAGASINS</span></Link>
           </nav>
         </div>
       )}

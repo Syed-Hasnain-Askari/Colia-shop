@@ -3,3 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.layout__wrapper{
+    border: 1px solid red
+}
+.carousal__section{
+    padding-bottom: 20px;
+    width: 100%;
+}
+.firstimage__section{
+    z-index: -90;
+    margin-top: 250px;
+}
+.second__image{
+    margin-top: 130px;
+}

@@ -21,16 +21,22 @@ function DropdpwnTypeOne() {
                 title="Cindy dress"
                 avatar={drop2}
                 price="$76.95"
+                hoverImage={drop2}
             />
+            
             <DropdownSubsSection
                 title="Cindy dress"
                 avatar={drop3}
                 price="$76.95"
+                
+                hoverImage={drop2}
             />
                 <DropdownSubsSection
                 title="Cindy dress"
                 avatar={drop1}
                 price="$76.95"
+                
+                hoverImage={drop2}
             />
         </div>
     )

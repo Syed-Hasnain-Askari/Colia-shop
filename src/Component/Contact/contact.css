@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,400');
-
-@media (min-width: 620px) {
-  body {
-    font-size: 100%;
-  }
-}
 *{
   margin: 0px;
   padding: 0px;
@@ -13,7 +7,8 @@
   height: 800px;
 }
 .container{
-  margin-top: 60px;
+  z-index: -90;
+  padding-top: 50px;
 }
 button {
   background-color: #4abdac;
@@ -38,7 +33,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
-img {
+.contact__image{
   width: 30%;
   float: left;
   margin: 0 1em 0.5em 0;

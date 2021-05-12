@@ -1,37 +1,39 @@
-import React from 'react';
-import { Fade } from 'react-slideshow-image';
-import './carousal.css';
-const Carousal = () => {
-  const fadeImages = [
-    '../../assets/images/carousal_images/car1.jpeg',
-    '../../assets/images/carousal_images/car2.jpeg',
-    '../../assets/images/carousal_images/car3.jpeg'
-  ];
+import React,{useState} from 'react'
+import Carousel from 'react-bootstrap/Carousel';
+import image from '../../assets/images/carousal_images/car1.jpeg'
+import image1 from '../../assets/images/carousal_images/car2.jpeg'
+import image2 from '../../assets/images/carousal_images/car3.jpeg'
+function ControlledCarousel() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
 
   return (
-    <div>
-      <h2>Fade Effect</h2>
-      <div className="slide-container">
-        <Fade>
-          <div className="each-fade">
-            <div>
-              <img src={fadeImages[0]} className="img-fluid" />
-            </div>
-          </div>
-          <div className="each-fade">
-            <div>
-              <img src={fadeImages[1]} />
-            </div>
-          </div>
-          <div className="each-fade">
-            <div>
-              <img src={fadeImages[2]} />
-            </div>
-          </div>
-        </Fade>
-      </div>
-    </div>
+    <Carousel fade>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={image}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={image1}
+      alt="Second slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={image2}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+</Carousel>
   );
-};
-
-export default Carousal;
+}
+export default ControlledCarousel

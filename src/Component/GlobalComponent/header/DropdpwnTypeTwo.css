@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 .dropdown2 {
     max-width: 80%;
     height: fit-content;
@@ -34,8 +35,11 @@
 .dropdown2 a {
     text-decoration: none;
     text-transform: capitalize;
-    font-weight: 400;
+    font-weight: 700;
+    font-style: normal;
+    color: #696969;
     font-size: 16px;
+    font-family: "poppins";
 }
 
 .dropdown2 a:hover {

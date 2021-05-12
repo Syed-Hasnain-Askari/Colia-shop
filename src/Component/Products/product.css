@@ -1,120 +1,22 @@
-.hero{
-    width: 100%;
-    height: 1400px;
+.product__title h4{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #696969;
 }
-.container__wrapper{
-    position: absolute;
-    top: 0px;
-    width: 90%;
-    height: 100vh;
-    margin-top: 60px;
-    display: flex;
-    z-index: -90;
+.product__costsection{
+    border: 1px solid red;
+    width: 240px
 }
-.col{
-    flex-basis: 45%;
+.product__cost del{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #333;
 }
-.slider{
-    height: 80vh;
-    display: flex;
+.woocommerce-Price-currencySymbol{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #333;
 }
-.product{
-    width: 200px;
-}
-.product .row .col > img{
-    height: 22vh;
-    width: 120px;
-    margin-bottom: 9px;
-    cursor: pointer;
-    opacity: 0.6;
-    margin-left: 50px;
-}
-.preview img{
-    height: 100%;
-    width: 100%;
-}
-p{
-    margin-bottom: 20px;
-}
-.brand{
-    background: #008000;
-    width: fit-content;
-    color: #fff;
-    font-size: 12px;
-    padding: 2px 5px;
-}
-h2{
-    font-size: 45px;
-    color: #555;
-    margin-bottom: 20px;
-}
-.rating{
-    display: flex;
-    height: 15px;
-}
-.rating .fa{
-    color: #008000;
-}
-.price{
-    color: #fe980f;
-    font-size: 26px;
-    font-weight: bold;
-    padding-top: 10px;
-}
-input{
-    width: 30px;
-    border: 1px solid #ccc;
-    font-weight: bold;
-    text-align: center;
-}
-button{
-    color: #fff;
-    font-size: 15px;
-    outline: none;
-    border: 0;
-    border-radius: 5px;
-    background: #fe980f;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-button .fa{
-    margin-right: 10px;
-}
-.related{
-    width: 90%;
-    margin: 0 auto 40px;
-    padding-top: 80px;
-}
-.related .row{
-    width: 100%;
-    height: auto;
-}
-.product__item{
-    flex-basis: 22%;
-    height: 100%;
-}
-.items img{
-    width: 100%;
-}
-.details{
-    margin-top: 20px;
-}
-.details p{
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-.details .rating{
-    margin: 10px 0;
-}
-
-
-
-
-
-
-
-
-
-
-

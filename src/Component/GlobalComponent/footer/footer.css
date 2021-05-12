@@ -1,11 +1,9 @@
-*{
-    font-family: "poppins";
-    line-height: 22px;
-    font-weight: 400;
-}
 #footer{
     background-color: black;
     width: 100%;
+    font-family: "poppins";
+    line-height: 22px;
+    font-weight: 400;
 }
 .footer_wrapper{
     padding-top: 100px;
