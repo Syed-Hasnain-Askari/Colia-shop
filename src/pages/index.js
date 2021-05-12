@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from "../Component/layout"
+import Checkout from '../Component/Checkout/Checkout'
 import Product from "../Component/Products/product"
 import ControlledCarousel from "../Component/Carousal/Carousal"
 import image from "../assets/images/frontpage1.jpeg"
@@ -46,6 +47,7 @@ const IndexPage = () => {
             </div>
           </div> 
           <Product />
+          <Checkout/>
         </div>
       </Layout>
     </div>

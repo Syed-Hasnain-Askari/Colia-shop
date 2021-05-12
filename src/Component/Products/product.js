@@ -13,10 +13,9 @@ export default function Products() {
   return (
          <div className="container">
             <div className="row d-flex justify-content-center">
-              <div className="col-xl-12 col-xs-12 col-lg-12">
               <Row className="m-0 border">
-              <Col xl={6} lg={6} md={6} sm={6} xs={6} className="left__gallery">
-                <Row className="">
+              <Col xl={8} lg={8} md={8} sm={12} xs={12} className="left__gallery">
+                <Row className="border">
                   <Col xl={2} lg={2} md={4} sm={4} xs={4}>
                     <Image
                       src={image1}
@@ -24,7 +23,6 @@ export default function Products() {
                         width: 150,
                         height: 130,
                         objectFit: "contain",
-                        marginTop: "20px",
                         cursor: "pointer",
                       }}
                       onClick={() => {
@@ -83,28 +81,37 @@ export default function Products() {
                   </Col>
                 </Row>
               </Col>
-              <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+              <Col xl={4} lg={4} md={12} sm={12} xs={12}>
                 <Row>
                   <div className="product__title">
                       <h4>Robe Escondida</h4>
                   </div>
                 </Row>
                 <Row>
-                  <div className="product__costsection d-flex justify-content-between">
+                  <div className="product__costsection d-flex justify-content-between mt-3">
                   <div className="product__cost">
                       <del>65.96</del>
                   </div>
                   <div className="product__discount">
-                  <span class="woocommerce-Price-currencySymbol">$</span>&nbsp;39.52
+                  <span>$</span>&nbsp;39.52
                   </div>
                   </div>
-                  <div className="price">
-                      <h5></h5>
+                </Row>
+                <Row>
+                <div className="color__section d-flex justify-content-between mt-5">
+                  <div className="color__heading">
+                      <h5>Color</h5>
+                  </div>
+                  <div className="pick__color">
+                  <div class="color-item" role="presentation"></div>
+                  <div class="color-item" role="presentation"></div>
+                  
+                  </div>
                   </div>
                 </Row>
               </Col>
             </Row>
-              </div>
+             
             </div>
          </div>
   )

@@ -3,9 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.layout__wrapper{
-    border: 1px solid red
-}
 .carousal__section{
     padding-bottom: 20px;
     width: 100%;

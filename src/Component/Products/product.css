@@ -8,15 +8,37 @@
     border: 1px solid red;
     width: 240px
 }
-.product__cost del{
+.product__cost{
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
+    color: #333;
+    font-family: "poppins";
+}
+.product__discount, .product__discount span{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #333;
+    font-family: "poppins";
+}
+.color__section{
+    margin-top: 60px;
+    border: 1px solid red;
+    width: 240px;
+}
+.color__heading{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
     color: #333;
 }
-.woocommerce-Price-currencySymbol{
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 600;
-    color: #333;
+.color-item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    z-index: 1;
+    transition: transform .2s ease;
+    flex-shrink: 0;
 }
