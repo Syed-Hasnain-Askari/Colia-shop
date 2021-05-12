@@ -4,6 +4,7 @@
     font-family: "poppins";
     line-height: 22px;
     font-weight: 400;
+    margin-top: 80px;
 }
 .footer_wrapper{
     padding-top: 100px;
@@ -95,11 +96,9 @@ a>font{
     margin: 23px 0px 0px 0px;
     padding: 0px
 }
-/* 
-@media only screen and (min-width: 1200px){
+@media only screen and (max-device-width: 480px) , only screen and (max-device-width: 480px) {
     #footer{
-        position: absolute;
-        bottom: 0px;
-        height: 300px;
+        height: 100%;
+        width: 100%;
     }
-} */
+}

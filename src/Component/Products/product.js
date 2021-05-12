@@ -69,15 +69,29 @@ export default function Products() {
                       }}
                     />
                   </Col>
-                  <Col xl={4} lg={4} md={4} sm={4} xs={4} className="preview">
-                    <Image
+                  <Col xl={6} lg={6} md={6} sm={6} xs={6} className="preview">
+                    {/* <Image
                       src={selectedItem}
                       style={{
                         width: 500,
                         height: 500,
                         objectFit: "contain",
                       }}
-                    />
+                    /> */}
+                    <ReactImageMagnify {...{
+                        smallImage: {
+                            alt: 'Wristwatch by Ted Baker London',
+                            isFluidWidth: true,
+                            src: selectedItem,
+                           
+                        },
+                        largeImage: {
+                            alt: '',
+                            src: selectedItem,
+                            width: 1000,
+                            height: 1800
+                        }
+                    }} />
                   </Col>
                 </Row>
               </Col>
@@ -102,10 +116,9 @@ export default function Products() {
                   <div className="color__heading">
                       <h5>Color</h5>
                   </div>
-                  <div className="pick__color">
-                  <div class="color-item" role="presentation"></div>
-                  <div class="color-item" role="presentation"></div>
-                  
+                  <div className="pick__color d-flex justify-content-evenly">
+                  <div class="color-item" role="presentation" style={{backgroundColor:"red"}}></div>
+                  <div class="color-item" role="presentation" style={{backgroundColor:"green"}}></div>
                   </div>
                   </div>
                 </Row>

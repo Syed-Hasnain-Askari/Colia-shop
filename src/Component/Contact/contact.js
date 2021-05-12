@@ -7,7 +7,7 @@ const Contact = () => {
   const [questions, setQuestions] = useState(data)
 
   return (
-    <main>
+    <main className="contact__wrapper">
       <div className='contact__container'>
         <h3>Nos horaires d'ouvertures</h3>
         <section className='info'>

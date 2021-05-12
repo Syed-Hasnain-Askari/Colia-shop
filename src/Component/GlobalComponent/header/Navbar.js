@@ -89,6 +89,7 @@ function Navbar() {
             <Link to="/LaMarque"><span>LA MARQUE</span></Link>
             <Link to="/Contact"><span>MAGASINS</span></Link>
           </nav>
+          
         </div>
       )}
     </>
