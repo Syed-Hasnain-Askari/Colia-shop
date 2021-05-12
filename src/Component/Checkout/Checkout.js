@@ -51,11 +51,28 @@ export default function Checkout() {
                   <label className="text-small text-uppercase" htmlFor="state">State/County</label>
                   <input className="form-control form-control-lg inputfield" id="state" type="text" />
                 </div>
-                <div className="col-lg-6 form-group">
+                <div className="col-lg-6 form-group mt-3">
                   <div className="custom-control custom-checkbox">
                     <input className="custom-control-input" id="alternateAddressCheckbox" type="checkbox" />
-                    <label className="custom-control-label text-small" htmlFor="alternateAddressCheckbox">Alternate billing address</label>
+                    <label className="custom-control-label text-small ml-3" htmlFor="alternateAddressCheckbox">Create an Accout</label>
                   </div>
+                </div>
+                <div className="row">
+                <div className="col-lg-12 form-group mt-3">
+                  <div className="custom-control custom-checkbox">
+                    <input className="custom-control-input" id="alternateAddressCheckbox" type="checkbox" />
+                    <label className="custom-control-label ship-address ml-5" htmlFor="alternateAddressCheckbox">Ship to a Different email Address?</label>
+                  </div>
+                </div>
+                </div>
+                <div className="row">
+                <div className="col-lg-6 form-group mt-3 pb-5">
+                  <div className="custom-control">
+                    <textarea className="form-control form-control-lg ml-g-4 pb-5 inputfield" placeholder="Comment about your order">
+
+                    </textarea>
+                  </div>
+                </div>
                 </div>
                 <div className="col-lg-12">
                   <div className="row d-none" id="alternateAddress">

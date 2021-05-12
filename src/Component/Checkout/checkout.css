@@ -2259,3 +2259,11 @@
     border: none;
     outline: none;
   }
+  .ship-address{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-family: "poppins";
+    font-style: normal;
+    color: #111111;
+  }
