@@ -15,7 +15,17 @@ exports.createPages = async ({ actions, graphql }) => {
             description {
               description
             }
-            image {
+            galleryImage1 {
+              file {
+                url
+              }
+            }
+            galleryImage2 {
+              file {
+                url
+              }
+            }
+            galleryImage3 {
               file {
                 url
               }
@@ -30,7 +40,6 @@ exports.createPages = async ({ actions, graphql }) => {
     createPage({
       path: `/Product/${obj.node.name}`,
       component: path.resolve("./src/Component/templates/product.js"),
-
       context: {
         Item_Details: obj.node,
       },

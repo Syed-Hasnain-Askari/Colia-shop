@@ -1,9 +1,12 @@
 import React from "react"
 import { graphql } from 'gatsby';
 
-export default function Home({data}) {
-    console.log(data.allContentfulProducts.edges)
-    return <div></div>
+export default function Home() {
+    // const item = data.allContentfulProducts.edges
+    // console.log(item)
+    return <div>
+      <h1>dasdasd</h1>
+    </div>
 }
 
 export const query = graphql`
@@ -19,7 +22,17 @@ export const query = graphql`
           description {
             description
           }
-          image {
+          galleryImage1 {
+            file {
+              url
+            }
+          }
+          galleryImage2 {
+            file {
+              url
+            }
+          }
+          galleryImage3 {
             file {
               url
             }

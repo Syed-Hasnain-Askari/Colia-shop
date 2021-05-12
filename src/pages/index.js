@@ -1,12 +1,12 @@
-import * as React from "react"
-import Layout from "../Component/layout"
-import Checkout from '../Component/Checkout/Checkout'
-import Product from "../Component/Products/product"
-import ControlledCarousel from "../Component/Carousal/Carousal"
-import image from "../assets/images/frontpage1.jpeg"
-import SilderComponent from '../Component/Carousal/SliderComponent'
-import { StaticImage } from "gatsby-plugin-image"
-const IndexPage = () => {
+import * as React from "react";
+import Layout from "../Component/layout";
+import Checkout from '../Component/Checkout/Checkout';
+import Cart from '../Component/Cart/Cart'
+import ControlledCarousel from "../Component/Carousal/Carousal";
+import AllProducts from '../Component/AllProducts/AllProducts'
+import { graphql } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+const IndexPage = ({data}) => {
   return (
     <div>
       <Layout>
@@ -46,7 +46,8 @@ const IndexPage = () => {
               </div>
             </div>
           </div> 
-          <Product />
+          <Cart/>
+          <AllProducts/>
           <Checkout/>
         </div>
       </Layout>
@@ -54,3 +55,36 @@ const IndexPage = () => {
   )
 }
 export default IndexPage
+export const query = graphql`
+  {
+    allContentfulProducts {
+      edges {
+        node {
+          name
+          sku
+          size
+          qty
+          price
+          description {
+            description
+          }
+          galleryImage1 {
+            file {
+              url
+            }
+          }
+          galleryImage2 {
+            file {
+              url
+            }
+          }
+          galleryImage3 {
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`
