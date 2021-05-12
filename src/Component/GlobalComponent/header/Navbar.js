@@ -9,11 +9,13 @@ import { useState } from "react"
 import { useEffect } from "react"
 import DropdpwnTypeOne from "./DropdpwnTypeOne"
 import DropdpwnTypeTwo from "./DropdpwnTypeTwo"
+import { useStateValue }from '../../Context/StateProvider'
 
 import {Link} from 'gatsby'
 
 function Navbar() {
-  const [show, handleShow] = useState(false)
+  const [show, handleShow] = useState(false);
+  const [ {basket} ] = useStateValue();
   const transitionNavbar = () => {
     if (window.scrollY > 115) {
       handleShow(true)
@@ -54,6 +56,7 @@ function Navbar() {
             <SearchIcon />
             <FavoriteBorderIcon />
             <ShoppingBasketIcon />
+            <p style={{color: '#fff'}}>{basket?.length}</p>
           </div>
         </div>
       ) : (
@@ -71,6 +74,7 @@ function Navbar() {
               <SearchIcon />
               <FavoriteBorderIcon />
               <ShoppingBasketIcon />
+              <p>{basket?.length}</p>
             </div>
           </header>
           <nav className="navbar__nav">
