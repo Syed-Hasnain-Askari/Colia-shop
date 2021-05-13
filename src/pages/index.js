@@ -48,8 +48,8 @@ const IndexPage = ({data}) => {
             </div>
           </div> 
           <AllProducts product={result}/>
-          <Cart/>
-          <Checkout/>
+          {/* <Cart/>
+          <Checkout/> */}
         </div>
       </Layout>
     </div>
