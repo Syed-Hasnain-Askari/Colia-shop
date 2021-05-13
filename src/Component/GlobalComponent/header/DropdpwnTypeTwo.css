@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 .dropdown2 {
     max-width: 80%;
     height: fit-content;
     display: flex;
-    /* align-items: center; */
     background: #fff;
     color: #000 !important;
     margin:auto;

@@ -41,9 +41,7 @@
     inset: 0px;
     display: block;
     object-fit: cover;
-    /* position: absolute; */
     transition: opacity 500ms ease-in-out;
-    /* top: 0; */
 }
 
 .real__image , .hover__image {
