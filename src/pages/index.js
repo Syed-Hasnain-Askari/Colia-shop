@@ -1,7 +1,5 @@
-import * as React from "react";
+import React from 'react';
 import Layout from "../Component/layout";
-import Checkout from '../Component/Checkout/Checkout';
-import Cart from '../Component/Cart/Cart'
 import ControlledCarousel from "../Component/Carousal/Carousal";
 import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";

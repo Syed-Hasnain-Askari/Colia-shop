@@ -1,5 +1,5 @@
-import { layer } from '@fortawesome/fontawesome-svg-core'
 import React from 'react'
+import { layer } from '@fortawesome/fontawesome-svg-core'
 import Layout from '../Component/layout'
 export default function Shop() {
     return (

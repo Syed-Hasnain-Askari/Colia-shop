@@ -4,7 +4,7 @@ import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import image1 from "../../assets/images/product_images/Product1.png"
 import image2 from "../../assets/images/product_images/Product2.png"
-import './cart.css'
+// import './cart.css'
 export default function Cart() {
     return (
         <div>
