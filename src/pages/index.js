@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from "../Component/layout";
-import ControlledCarousel from "../Component/Carousal/Carousal";
-import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import Layout from '../Component/layout';
+import ControlledCarousel from '../Component/Carousal/Carousal'
+import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import AllProducts from '../Component/Products/GridTile'
 const IndexPage = ({data}) => {
   const result = data.allContentfulProducts.edges

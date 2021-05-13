@@ -1,11 +1,11 @@
-import React from "react"
+import React from 'react'
 import "./footer.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faFacebook,
   faInstagram,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons"
+} from '@fortawesome/free-brands-svg-icons'
 export default function Footer() {
   return (
     <div id="footer">

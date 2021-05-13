@@ -1,12 +1,10 @@
 import React from 'react'
 import Layout from '../Component/layout'
-import { StaticImage } from "gatsby-plugin-image"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
+import { StaticImage } from 'gatsby-plugin-image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faFacebook,
   faInstagram,
-  faInstagramSquare,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"
 import './lamarque.css';

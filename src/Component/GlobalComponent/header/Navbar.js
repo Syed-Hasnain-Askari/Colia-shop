@@ -1,14 +1,12 @@
-import React from "react"
+import React,{useState,useEffect} from 'react'
 import "./Navbar.css"
 
 import SearchIcon from "@material-ui/icons/Search"
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder"
-import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket"
-import logo from "../../../assets/images/header_images/logoColiaShop.png"
-import { useState } from "react"
-import { useEffect } from "react"
-import DropdpwnTypeOne from "./DropdpwnTypeOne"
-import DropdpwnTypeTwo from "./DropdpwnTypeTwo"
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
+import logo from '../../../assets/images/header_images/logoColiaShop.png'
+import DropdpwnTypeOne from './DropdpwnTypeOne'
+import DropdpwnTypeTwo from './DropdpwnTypeTwo'
 import { useStateValue }from '../../Context/StateProvider'
 
 import {Link} from 'gatsby'

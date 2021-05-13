@@ -1,7 +1,7 @@
 import React from 'react'
 import './SliderComponent.css'
 
-import Slider from "react-slick";
+import Slider from 'react-slick';
 import slide1 from '../../assets/images/carousal_images/car1.jpeg'
 import slide2 from '../../assets/images/carousal_images/car2.jpeg'
 import slide3 from '../../assets/images/carousal_images/car3.jpeg'

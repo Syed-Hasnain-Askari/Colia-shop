@@ -4,7 +4,7 @@ import {
   Geographies,
   Geography,
   Marker
-} from "react-simple-maps";
+} from 'react-simple-maps';
 
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";

@@ -1,13 +1,7 @@
 import React, { useState } from 'react'
-import image1 from "../../assets/images/product_images/Product1.png"
-import image2 from "../../assets/images/product_images/Product2.png"
-import image3 from "../../assets/images/product_images/Product3.png"
-import image4 from "../../assets/images/product_images/Product4.png"
 import ReactImageMagnify from 'react-image-magnify';
-import { Image, Col, Row } from "react-bootstrap"
-import image5 from "../../assets/images/product_images/robe-Nalya.jpeg"
-import { StaticImage } from "gatsby-plugin-image"
-import "./product.css"
+import { Image, Col, Row } from 'react-bootstrap'
+import './product.css'
 export default function Products(props) {
 
   const [selectedItem, setSelectedItem] = useState(props.image1)
