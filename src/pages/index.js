@@ -3,10 +3,11 @@ import Layout from "../Component/layout";
 import Checkout from '../Component/Checkout/Checkout';
 import Cart from '../Component/Cart/Cart'
 import ControlledCarousel from "../Component/Carousal/Carousal";
-import AllProducts from '../Component/AllProducts/AllProducts'
 import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import AllProducts from '../Component/Products/GridTile'
 const IndexPage = ({data}) => {
+  const result = data.allContentfulProducts.edges
   return (
     <div>
       <Layout>
@@ -46,8 +47,8 @@ const IndexPage = ({data}) => {
               </div>
             </div>
           </div> 
+          <AllProducts product={result}/>
           <Cart/>
-          <AllProducts/>
           <Checkout/>
         </div>
       </Layout>

@@ -1,0 +1,116 @@
+
+.grid__tile {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 25px;
+    margin: 0 auto;
+    width: 300px;
+    z-index: 90;
+}
+
+.gridtrans__img {
+    position: relative;
+    overflow: hidden;
+    transition: all 250ms cubic-bezier(0.25,0.46,0.45, 0.94);
+}
+.gridReal__image {
+    inset: 0px;
+    display: block;
+    object-fit: cover;
+    /* position: absolute; */
+    transition: opacity 500ms ease-in-out;
+    /* top: 0; */
+}
+
+.gridReal__image , .gridHover__image {
+    width: 100%;
+    height: 370px;
+}
+.gridHover__image {
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+}
+
+.gridtrans__img:hover .gridReal__image {
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.gridtrans__img:hover .gridHover__image {
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    transform: scale(1.05);
+}
+.gridtrans__img:hover .choiceSec__opt {
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    transform: scale(1.05);
+}
+
+.avail__sec{
+    width: fit-content;
+    background-color: orange;
+    color: #fff;
+    padding: 5px 20px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    text-transform: uppercase;
+    z-index: 10;
+    font-size: 13px;
+
+}
+
+.choiceSec__opt {
+    background:#000;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.choiceSec__opt .MuiSvgIcon-root {
+    margin: 0 auto;
+    padding: 0 25px;
+    cursor: pointer;
+    margin-top: 5px;
+    color: #fff;
+}
+.middle__span {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+.choiceSec__opt:hover {
+    background: yellow;
+    color: #000;
+
+}
+.choiceSec__opt:hover .MuiSvgIcon-root {
+    color: #000;
+}
+.grid__tile h3 {
+    margin-top: 20px;
+    font-weight: 700;
+    color: #696969;
+    font-style: normal;
+}
+
+.grid__tile h4 {
+    margin-top: 10px;
+}
