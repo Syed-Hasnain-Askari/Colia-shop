@@ -2,8 +2,10 @@ import React from 'react';
 import Layout from '../Component/layout';
 import ControlledCarousel from '../Component/Carousal/Carousal'
 import { graphql } from 'gatsby';
+import {Col,Row} from 'react-bootstrap'
 import { StaticImage } from 'gatsby-plugin-image';
 import AllProducts from '../Component/Products/GridTile'
+import './index.css'
 const IndexPage = ({data}) => {
   const result = data.allContentfulProducts.edges
   return (
@@ -14,40 +16,51 @@ const IndexPage = ({data}) => {
             <ControlledCarousel/>
           </div>
           <div className="container image__section">
-            <div className="row d-flex justify-content-center mx-auto">
-              <div className="col-lg-10 col-md-10 col-xl-10">
-                <div className="row d-flex justify-content-center">
-                  <div className="col-lg-12 col-xs-12 firstimage__section border d-flex justify-content-xl-between align-content-center">
-                    <div>
-                      <StaticImage
+            <div className="row border mx-auto">
+            <Row className="d-flex align-content-center justify-content-lg-center mx-auto m-lg-5">
+                <Col sm={12} xs={12} lg={4} className="ml-5">
+                <StaticImage
                         src="../assets/images/frontpage1.jpeg"
                         quality={95}
                         formats={["AUTO", "WEBP", "AVIF"]}
                         alt="A Gatsby astronaut"
+                        className="image1"
                         style={{ marginBottom: `1.5rem` }}
                       />
-                    </div>
-                    <div className="second__image">
-                      <StaticImage
+                  
+                </Col>
+                <Col sm={12} xs={12} lg={8} className="mt-lg-5">
+                  
+                <StaticImage
                         src="../assets/images/frontpage2.jpeg"
                         quality={95}
-                        width={700}
                         formats={["AUTO", "WEBP", "AVIF"]}
                         alt="A Gatsby astronaut"
+                        width={700}
+                        className="frontimage2"
                         style={{
                           marginBottom: `1.5rem`,
+                          
                         }}
                       />
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
+                </Col>
+              </Row>
             </div>
           </div> 
           <AllProducts product={result}/>
+          
           {/* <Cart/>
           <Checkout/> */}
+          <div classname="container-fluid">
+            <Row>
+              <Col>
+                dfdfsdf
+              </Col>
+              <Col>
+                dfdfsdf
+              </Col>
+            </Row>
+          </div>
         </div>
       </Layout>
     </div>
