@@ -7,7 +7,7 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"
-import './lamarque.css';
+import '../Component/LaMarque/lamarque.css'
 
 export default function LaMarque() {
     return (
