@@ -14,6 +14,7 @@ export default function Home({pageContext}) {
             price={pageContext.Item_Details.price}
             sku={pageContext.Item_Details.sku}
             size={pageContext.Item_Details.size}
+            category={pageContext.Item_Details.category}
             />
         </Layout>
     )

@@ -5,7 +5,6 @@ import { graphql } from 'gatsby';
 import {Col,Row} from 'react-bootstrap'
 import { StaticImage } from 'gatsby-plugin-image';
 import AllProducts from '../Component/Products/GridTile'
-import "bootstrap/dist/css/bootstrap.min.css";
 import '../Component/index.css'
 const IndexPage = ({data}) => {
   const result = data.allContentfulProducts.edges
@@ -48,8 +47,13 @@ const IndexPage = ({data}) => {
               </Row>
             </div>
           </div> 
+          <Row className="d-flex justify-content-center">
+            <Col lg={6}>
+              <h1 className="text-center product__heading">Achetez ces looks</h1>
+              <p className="text-center">Mettez en valeur votre propre personnalité et votre individualité avec nos articles à la mode.</p>
+            </Col>
+          </Row>
           <AllProducts product={result}/>
-          
           {/* <Cart/>
           <Checkout/> */}
           <div className="container-fluid image__section1">

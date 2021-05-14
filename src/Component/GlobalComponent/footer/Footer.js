@@ -6,7 +6,6 @@ import {
   faInstagram,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
-import "bootstrap/dist/css/bootstrap.min.css";
 export default function Footer() {
   return (
     <div id={"footer"}>

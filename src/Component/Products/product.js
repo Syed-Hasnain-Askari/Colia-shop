@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import ReactImageMagnify from 'react-image-magnify';
-import { Image, Col, Row,Button } from 'react-bootstrap'
+import { Image, Col, Row} from 'react-bootstrap'
 import {useStateValue} from '../Context/StateProvider'
 import ProductDetailsSidebar from './ProductDetailsSidebar'
 import './ProductDetailsSidebar.css'
-import './product.css'
-import "bootstrap/dist/css/bootstrap.min.css";
 export default function Products(props) {
 
   const [selectedItem, setSelectedItem] = useState(props.image1)
@@ -25,7 +23,7 @@ export default function Products(props) {
          <div className="container">
             <div className="row d-flex justify-content-center">
               <Row className="m-0 border">
-              <Col xl={6} lg={6} md={6} sm={12} xs={12} className="left__gallery">
+              <Col xl={8} lg={8} md={8} sm={12} xs={12} className="left__gallery">
                 <Row className="border">
                   <Col xl={2} lg={2} md={4} sm={4} xs={4}>
                     <Image
@@ -85,8 +83,14 @@ export default function Products(props) {
                   </Col>
                 </Row>
               </Col>
-              <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-                    <ProductDetailsSidebar/>
+              <Col xl={4} lg={4} md={12} sm={12} xs={12}>
+                    <ProductDetailsSidebar
+                    title={props.title}
+                    price={props.price}
+                    sku={props.sku}
+                    categoty={props.category}
+                    
+                    />
               </Col>
             </Row>
              

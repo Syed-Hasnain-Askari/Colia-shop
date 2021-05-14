@@ -22,8 +22,8 @@ function ProductDetailsSidebar(props) {
 
     return (
         <div className="productSidebar__details">
-            <h3> {props.productName} </h3>
-            <h4 className="price"> {props.productPrice} </h4>
+            <h3>{props.title}</h3>
+            <h4 className="price">{props.price}</h4>
             <div className="size__sec">
                 <label>Size:</label>
                 <button>S</button>
@@ -40,18 +40,18 @@ function ProductDetailsSidebar(props) {
                     >+</button>
                 </div>
                 <div className="ADC__sec">
-                    <button className="ADC__button">add to cart</button>
+                    <button className="ADC__button btn">add to cart</button>
                 </div>
             </div>
             <div className="further__details">
                 <table>
                     <tr>
                         <th>SKU:</th>
-                        <td>N / A</td>
+                        <td>{props.sku}</td>
                     </tr>
                     <tr>
                         <th>Categories:</th>
-                        <td>{props.category} </td>
+                        <td>{props.category}</td>
                     </tr>
                     <tr>
                         <th>Share on:</th>

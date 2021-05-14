@@ -84,15 +84,15 @@
 }
 
 .ADC__button {
-    background: gray;
+   
     color: #fff;
-    padding: 15px 35px;
+    /* padding: 15px 35px; */
     text-transform: uppercase;
-    border-radius: 8px;
     border: none;
     outline: none;
+    background-color: black;
 }
-.ADC__button:hover {
+/* .ADC__button:hover {
     background: #000;
     transition: 0.5s ease-in-out;
 }
@@ -100,7 +100,7 @@
 .ADC__button:not(:hover) {
     background: gray;
     transition: 0.5s ease-in-out;
-}
+} */
 
 .further__details {
     margin-top: 40px;

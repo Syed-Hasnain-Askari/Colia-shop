@@ -1,7 +1,6 @@
 import React from 'react'
 import './DropdpwnTypeTwo.css'
 import droptype2 from '../../../assets/images/header_images/droptype2.jpeg'
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function DropdpwnTypeTwo() {
     return (
