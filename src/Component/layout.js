@@ -4,6 +4,7 @@ import Footer from '../Component/GlobalComponent/footer/Footer'
 import reducer , { initialState } from './Context/reducer';
 import StateProvider from './Context/StateProvider';
 import '../Component/layout.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 export default function Layout({children}) {
     return (
         <StateProvider initialState = { initialState } reducer = {reducer} >

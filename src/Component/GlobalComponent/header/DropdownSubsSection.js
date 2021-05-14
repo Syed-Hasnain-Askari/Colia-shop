@@ -1,6 +1,6 @@
 import React from 'react'
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 function DropdownSubsSection({ title, avatar , price , hoverImage }) {
     return (
         <div className="inner">

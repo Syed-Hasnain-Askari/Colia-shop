@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby';
-
 export default function Home() {
     // const item = data.allContentfulProducts.edges
     // console.log(item)
@@ -8,7 +7,6 @@ export default function Home() {
       <h1>dasdasd</h1>
     </div>
 }
-
 export const query = graphql`
   {
     allContentfulProducts {

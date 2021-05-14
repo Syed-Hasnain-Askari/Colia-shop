@@ -1,10 +1,10 @@
 .dropdown {
-    max-width: 80%;
-    height: fit-content;
+    width: 80%;
+    /* height: fit-content; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: #eee;
     color: #000 !important;
     margin: auto;
     padding-top: 30px;
@@ -41,7 +41,9 @@
     inset: 0px;
     display: block;
     object-fit: cover;
+    /* position: absolute; */
     transition: opacity 500ms ease-in-out;
+    /* top: 0; */
 }
 
 .real__image , .hover__image {
@@ -96,22 +98,53 @@
 
 }
 .inner h3 {
-    text-decoration: none;
     margin-top: 20px;
-    font-family: "poppins";
-    font-weight: 700;
-    font-size: 15px;
-    color: #696969;
-    font-style: normal;
 }
 
 .inner h4 {
-    text-decoration: none;
-    margin-top: 10px;
-    font-family: "poppins";
-    font-size: 15px;
-    font-size: 14px;
-    line-height: 1.7;
-    font-weight: 700;
-    color: #333;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:990px) {
+    .dropdown {
+        /* width: 257px; */
+        width: 259px;
+        height: 73%;
+        /* height: 100%; */
+        padding: 20px 5px;
+        top: 123px;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        margin: 0;
+        padding: 10px 10px;
+        overflow-y: scroll;
+        /* visibility: hidden; */
+        transition: 1s ease;
+
+        /* additional changes */
+        /* display: block; */
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        
+    }
+    /* .dropdown:hover {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    } */
+    .top {
+        top: 210px;
+        height: 60%;
+    }
+
+    .inner {
+        margin-right: 10px;
+    }
+    .real__image , .hover__image {
+        width: 100%;
+        height: 300px;
+    }
 }

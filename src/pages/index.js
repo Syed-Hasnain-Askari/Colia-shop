@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import {Col,Row} from 'react-bootstrap'
 import { StaticImage } from 'gatsby-plugin-image';
 import AllProducts from '../Component/Products/GridTile'
+import "bootstrap/dist/css/bootstrap.min.css";
 import '../Component/index.css'
 const IndexPage = ({data}) => {
   const result = data.allContentfulProducts.edges

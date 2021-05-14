@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
-import data from './data'
-import SingleQuestion from './Question'
+import React, { useState } from 'react';
+import data from './data';
+import SingleQuestion from './Question';
 import './contact.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Contact = () => {
   const [questions, setQuestions] = useState(data)

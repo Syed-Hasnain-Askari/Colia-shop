@@ -1,14 +1,15 @@
 import React from 'react'
-import "./footer.css"
+import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faFacebook,
   faInstagram,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
+import "bootstrap/dist/css/bootstrap.min.css";
 export default function Footer() {
   return (
-    <div id="footer">
+    <div id={"footer"}>
       <div className="footer_wrapper">
         <div className="container">
           <div className="row">

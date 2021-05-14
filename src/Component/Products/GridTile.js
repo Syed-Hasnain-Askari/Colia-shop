@@ -4,6 +4,7 @@ import CompareIcon from '@material-ui/icons/Compare';
 import SearchIcon from '@material-ui/icons/Search';
 import { Col, Row } from "react-bootstrap"
 import {Link} from 'gatsby'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function GridTile(props) {
     const [product,setProduct] = useState({

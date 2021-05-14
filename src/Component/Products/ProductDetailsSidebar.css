@@ -1,0 +1,122 @@
+.productSidebar__details {
+    width: 300px;
+    height: auto;
+    padding: 30px;
+}
+.productSidebar__details h3
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+.price
+{
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+.size__sec {
+    display: flex;
+    flex-direction: row;
+}
+.size__sec label {
+    padding-right: 100px;
+    font-weight: 600;
+}
+
+.size__sec button
+{
+    background: #eee;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    padding: 5px 9px;
+    margin-right: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.size__sec button:hover {
+    background: #000;
+    color: #fff;
+    transition: .5s ease-in-out;
+}
+.size__sec button:not(:hover) {
+    background: #eee;
+    color: #000;
+    transition: .5s ease-in-out;
+}
+
+.size__sec button:focus {
+    background: #000;
+    color: #fff;
+}
+
+.add__toCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    /* padding: 4px; */
+    margin-top: 40px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    /* background: yellow; */
+    text-align: center;
+    padding: 3px 5px;
+    font-size: 22px;
+}
+.counter button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 33px;
+}
+
+.ADC__sec {
+    padding-left: 30px;
+}
+
+.ADC__button {
+    background: gray;
+    color: #fff;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.ADC__button:hover {
+    background: #000;
+    transition: 0.5s ease-in-out;
+}
+
+.ADC__button:not(:hover) {
+    background: gray;
+    transition: 0.5s ease-in-out;
+}
+
+.further__details {
+    margin-top: 40px;
+}
+.further__details > table {
+    text-align: left;
+    font-size: 15px;
+}
+
+.further__details > table > tr > th {
+    /* text-transform: uppercase; */
+    padding: 5px 35px 5px 0px;
+}
+
+.further__details > table > tr > td > .MuiSvgIcon-root {
+    margin-right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}

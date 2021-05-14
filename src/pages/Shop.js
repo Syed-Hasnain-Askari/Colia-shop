@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../Component/layout'
+import "bootstrap/dist/css/bootstrap.min.css";
 export default function Shop() {
     return (
         <div>

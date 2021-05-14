@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import ReactImageMagnify from 'react-image-magnify';
 import { Image, Col, Row,Button } from 'react-bootstrap'
 import {useStateValue} from '../Context/StateProvider'
-import {Link} from 'gatsby'
+import ProductDetailsSidebar from './ProductDetailsSidebar'
+import './ProductDetailsSidebar.css'
 import './product.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 export default function Products(props) {
 
   const [selectedItem, setSelectedItem] = useState(props.image1)
@@ -23,7 +25,7 @@ export default function Products(props) {
          <div className="container">
             <div className="row d-flex justify-content-center">
               <Row className="m-0 border">
-              <Col xl={8} lg={8} md={8} sm={12} xs={12} className="left__gallery">
+              <Col xl={6} lg={6} md={6} sm={12} xs={12} className="left__gallery">
                 <Row className="border">
                   <Col xl={2} lg={2} md={4} sm={4} xs={4}>
                     <Image
@@ -83,60 +85,8 @@ export default function Products(props) {
                   </Col>
                 </Row>
               </Col>
-              <Col xl={4} lg={4} md={12} sm={12} xs={12}>
-                <Row>
-                  <div className="product__title">
-                      <h4>{props.title}</h4>
-                  </div>
-                </Row>
-                <Row>
-                  <div className="product__costsection d-flex justify-content-between mt-3">
-                  <div className="product__cost">
-                      <del>65.96</del>
-                  </div>
-                  <div className="product__discount">
-                  <span>$</span>
-                  &nbsp;
-                  {props.price}
-                  </div>
-                  </div>
-                </Row>
-                <Row>
-                <div className="color__section d-flex justify-content-between mt-5">
-                  <div className="color__heading">
-                      <h5>Color</h5>
-                  </div>
-                  <div className="pick__color d-flex justify-content-evenly">
-                  <div class="color-item" role="presentation" style={{backgroundColor:"red"}}></div>
-                  <div class="color-item" role="presentation" style={{backgroundColor:"green"}}></div>
-                  </div>
-                  </div>
-                </Row>
-                <Row>
-                <div className="color__section d-flex justify-content-between mt-5">
-                  <div className="color__heading">
-                      <h5>Size</h5>
-                  </div>
-                  <div className="d-flex justify-content-evenly">
-                  <div class="size-item" role="presentation"><p>{props.size}</p></div>
-                  </div>
-                  </div>
-                </Row>
-                <Row>
-                  <div>
-                    <span>
-                      <input type="button" className="btn-increment"></input>
-                    </span>
-                    <span>
-                      <input type="text" className="quntity-text"></input>
-                    </span>
-                    <span>
-                      <input type="button" className="btn-decrement"></input>
-                    </span>
-                    <Button onClick={()=>Addtocart()}>Add to  Cart</Button>
-                    <Link to="/"><a hre="#">Back</a></Link>
-                  </div>
-                </Row>
+              <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+                    <ProductDetailsSidebar/>
               </Col>
             </Row>
              
