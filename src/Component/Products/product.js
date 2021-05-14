@@ -1,10 +1,24 @@
 import React, { useState } from 'react'
 import ReactImageMagnify from 'react-image-magnify';
-import { Image, Col, Row } from 'react-bootstrap'
+import { Image, Col, Row,Button } from 'react-bootstrap'
+import {useStateValue} from '../Context/StateProvider'
+import {Link} from 'gatsby'
 import './product.css'
 export default function Products(props) {
 
   const [selectedItem, setSelectedItem] = useState(props.image1)
+  const [{basket},dispatch] = useStateValue()
+  console.log("On  the basket",basket)
+  const Addtocart = () =>{
+    dispatch({
+      type:"Add_To_Basket",
+      item:{
+        title:props.name,
+        image:props.image1,
+        price:props.price,
+      }
+    })
+  }
   return (
          <div className="container">
             <div className="row d-flex justify-content-center">
@@ -119,6 +133,8 @@ export default function Products(props) {
                     <span>
                       <input type="button" className="btn-decrement"></input>
                     </span>
+                    <Button onClick={()=>Addtocart()}>Add to  Cart</Button>
+                    <Link to="/"><a hre="#">Back</a></Link>
                   </div>
                 </Row>
               </Col>

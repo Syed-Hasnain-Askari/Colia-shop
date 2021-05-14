@@ -17,7 +17,7 @@ const IndexPage = ({data}) => {
           </div>
           <div className="container image__section">
             <div className="row border mx-auto">
-            <Row className="d-flex align-content-center justify-content-lg-center mx-auto m-lg-5">
+            <Row className="d-flex align-content-center justify-content-sm-end justify-content-lg-center mx-auto m-lg-5">
                 <Col sm={12} xs={12} lg={4} className="ml-5">
                 <StaticImage
                         src="../assets/images/frontpage1.jpeg"
@@ -51,16 +51,39 @@ const IndexPage = ({data}) => {
           
           {/* <Cart/>
           <Checkout/> */}
-          <div classname="container-fluid">
+          <div className="container-fluid image__section1">
             <Row>
               <Col>
-                dfdfsdf
+              <StaticImage
+                        src="../assets/images/col_joy_520.jpeg"
+                        quality={95}
+                        formats={["AUTO", "WEBP", "AVIF"]}
+                        alt="A Gatsby astronaut"
+                        width={700}
+                        className="col_joy_520"
+                        style={{
+                          marginBottom: `1.5rem`,
+                          
+                        }}
+                      />
               </Col>
               <Col>
-                dfdfsdf
+              <StaticImage
+                        src="../assets/images/Gilet-Emilia.jpeg"
+                        quality={95}
+                        formats={["AUTO", "WEBP", "AVIF"]}
+                        alt="A Gatsby astronaut"
+                        width={700}
+                        className="Gilet-Emilia"
+                        style={{
+                          marginBottom: `1.5rem`,
+                          
+                        }}
+                      />
               </Col>
             </Row>
-          </div>
+            </div>
+        
         </div>
       </Layout>
     </div>

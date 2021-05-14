@@ -1,6 +1,12 @@
 .image__section{
     margin-top: 300px;
 }
+.image__section1{
+    margin-top: 230px;
+}
+.Gilet-Emilia{
+    margin-top: 130px;
+}
 @media only screen and (max-device-width: 480px) {
     .frontimage2{
         margin-top: 20px;
