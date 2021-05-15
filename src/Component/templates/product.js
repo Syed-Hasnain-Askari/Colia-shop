@@ -2,8 +2,6 @@ import React from 'react';
 import Layout from '../layout'
 import ProductDetail from '../Products/product'
 export default function Home({pageContext}) {
-    console.log(pageContext.Item_Details)
-    console.log(pageContext.Item_Details.id)
     return(
         <Layout>
             <ProductDetail

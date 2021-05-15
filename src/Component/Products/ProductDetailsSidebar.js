@@ -40,7 +40,7 @@ function ProductDetailsSidebar(props) {
             className="snipcart-add-item ADC__button"
             data-item-id={props.id}
             data-item-price={props.price}
-            data-item-url={'/'}
+            data-item-url="https://frosty-goldwasser-fdb81f.netlify.app//"
             data-item-name={props.title}
             data-item-image={props.image}
           >

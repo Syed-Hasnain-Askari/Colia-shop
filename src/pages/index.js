@@ -106,6 +106,7 @@ export const query = graphql`
           size
           qty
           price
+          category
           description {
             description
           }

@@ -88,7 +88,7 @@ export default function Products(props) {
                     title={props.title}
                     price={props.price}
                     sku={props.sku}
-                    categoty={props.category}
+                    category={props.category}
                     id={props.id}
                     image={props.image1}
                     

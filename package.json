@@ -37,6 +37,7 @@
     "redux": "^4.1.0"
   },
   "devDependencies": {
+    "netlify-cli": "^3.29.15",
     "prettier": "2.2.1"
   },
   "keywords": [

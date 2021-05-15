@@ -1,7 +1,7 @@
 // Define site URL here
 let URL;
 if (process.env.NODE_ENV === 'production') {
-  URL = 'https://frosty-goldwasser-fdb81f.netlify.app/';
+  URL = 'https://frosty-goldwasser-fdb81f.netlify.app';
 } else {
   URL = 'http://localhost:8000';
 }
