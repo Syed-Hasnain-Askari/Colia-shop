@@ -1,19 +1,34 @@
+// Define site URL here
+let URL;
+if (process.env.NODE_ENV === 'production') {
+  URL = 'https://frosty-goldwasser-fdb81f.netlify.app/';
+} else {
+  URL = 'http://localhost:8000';
+}
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Ecommerce Demo`,
+    description: `Your next ecommerce Gatsby site powered with Contentful and Snipcart.`,
+    author: `Subhnan Akram`,
+    siteUrl: URL,
   },
-
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
-      resolve: 'gatsby-plugin-snipcartv3',
-      options: {
-        apiKey: 'NjhjOWVlY2MtOGExMy00YWMxLTgyMTUtYzdhODcwMDliYzg0NjM3NTY2MzMzMzgzODYzNjk5'
+			resolve: 'gatsby-plugin-snipcart',
+			options: {
+				apiKey: process.env.SNIPCART_APIKEY,
+        autopop: true,
+        js: 'https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.js',
+        styles: 'https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.css',
       }
-    },
+		},
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -39,8 +54,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `5ytwj9v67y9k`,
-        accessToken: `1Ybu8CY1RGxMMevCL10tfqbmFspmCkETq3v5bpAoxXw`,
+        spaceId: process.env.CONTENTFUL_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
 

@@ -9,7 +9,6 @@ export default function Products(props) {
 
   const [selectedItem, setSelectedItem] = useState(props.image1)
   const [{basket},dispatch] = useStateValue()
-  console.log("On  the basket",basket)
   const Addtocart = () =>{
     dispatch({
       type:"Add_To_Basket",

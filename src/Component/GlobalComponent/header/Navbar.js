@@ -74,8 +74,8 @@ function Navbar() {
                                     cName="top"
                                 />
                             </span>
-                            <span>the brand</span>
-                            <span>stores</span>
+                            <Link to="/LaMarque"><span className="contact">La Marque</span></Link>
+                            <Link to="/Contact"><span className="contact">MAGASINS</span></Link>
                             <div className="close__menu" onClick={()=> setOpen(false)}><CloseIcon/></div>
                         </div>
                         <div className="rightSec__icons">
@@ -111,8 +111,8 @@ function Navbar() {
                             <span className="d__btn">pre-order
                                 <DropdpwnTypeOne />
                             </span>
-                            <span>the brand</span>
-                            <span>stores</span>
+                            <Link to="/LaMarque"><span className="contact">La Marque</span></Link>
+                            <Link to="/Contact"><span className="contact">stores</span></Link>
                         </nav>
                     </div>
             }

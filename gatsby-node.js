@@ -7,6 +7,7 @@ exports.createPages = async ({ actions, graphql }) => {
       allContentfulProducts {
         edges {
           node {
+            id
             name
             sku
             size

@@ -4,13 +4,13 @@
     color: #eee;
     background-color: #000;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: "poppins";
     z-index: 100;
 
 }
 
 .navbar__wrapper span:hover {
-    color:sandybrown;
+    color:#efb810;
 }
 
 .navbar__header {
@@ -103,7 +103,7 @@
 } */
 
 .navbar2__wrapper:hover span {
-    color: sandybrown;
+    color: #efb810;
 }
 
 .leftSec__logo {
@@ -313,4 +313,10 @@
     margin: 0;
 }
 
+}
+.contact{
+    border: none;
+    text-decoration-line: none;
+    text-decoration: none;
+    color: white;
 }
