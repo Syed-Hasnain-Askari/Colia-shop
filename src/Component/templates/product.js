@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../layout'
 import ProductDetail from '../Products/product'
-import "bootstrap/dist/css/bootstrap.min.css";
 export default function Home({pageContext}) {
     console.log(pageContext.Item_Details)
     return(

@@ -8,7 +8,6 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"
 import '../Component/LaMarque/lamarque.css'
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function LaMarque() {
     return (

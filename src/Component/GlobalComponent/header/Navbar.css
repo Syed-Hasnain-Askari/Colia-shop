@@ -152,7 +152,7 @@
 }
 
 
-.d__btn:hover .dropdown{    
+.d__btn:hover .dropdown1{  
     transition: 2.5s;
     display: flex;
 }
@@ -189,6 +189,10 @@
         display: none;
     }
 
+    .navbar2__wrapper {
+        overflow:hidden;
+    }
+
     .left__sec {
         display: none;
     }
@@ -209,19 +213,22 @@
 
 .mobSearchbar {
     width: 90%;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #fff;
     padding: 4px;
     position: absolute;
-    top: 40px;
+    top: 50px;
+    overflow: hidden ;
 }
 .mobSearchbar > input {
     border: none;
     outline: none;
     padding: 4px 10px;
     width: 70%;
+    font-size: 18px;
 }
 .mobSearchbar > .MuiSvgIcon-root {
     color: #000;
@@ -280,10 +287,12 @@
 
     .click__menu  {
         display: block;
-        margin-top: 4px;
+        /* margin-top: 4px; */
+        margin-top: -10px;
         position: absolute;
         top: 0;
         right: 40px;
+        padding: 0;
     }
 
     .click__menu > .MuiSvgIcon-root {
@@ -294,7 +303,7 @@
         display: none;
     }
 
-    .d__btn:hover .dropdown{    
+    .d__btn:hover .dropdown1{    
     transition: 2.5s;
     display: block;
 }

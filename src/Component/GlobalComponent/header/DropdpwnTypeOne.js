@@ -1,6 +1,5 @@
 import React from 'react'
 import './DropdpwnTypeOne.css'
-import "bootstrap/dist/css/bootstrap.min.css";
 import drop1 from '../../../assets/images/header_images/drop11.jpeg'
 import drop2 from '../../../assets/images/header_images/drop2.jpeg'
 import drop3 from '../../../assets/images/header_images/drop31.jpeg'
@@ -10,7 +9,7 @@ import DropdownSubsSection from './DropdownSubsSection'
 
 function DropdpwnTypeOne({cName}) {
     return (
-        <div className={`dropdown ${cName}`}>
+        <div className={`dropdown1 ${cName}`}>
             <DropdownSubsSection
                 title="Cindy dress"
                 avatar={drop1}

@@ -14,8 +14,8 @@ function DropdownSubsSection({ title, avatar , price , hoverImage }) {
                 />
                 <div className="choice__sec"><OpenInNewIcon/></div>
             </div>
-            <h3> {title} </h3>
-            <h4> {price} </h4>
+            <h5> {title} </h5>
+            <h5> {price} </h5>
     </div>
     )
 }
