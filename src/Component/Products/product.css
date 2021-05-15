@@ -1,0 +1,11 @@
+@media only screen and (max-device-width: 480px) {
+    .left__gallery{
+        margin-top: 900px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .left__gallery{
+      margin-top: 340px;
+      width: 100%;
+    }
+  }

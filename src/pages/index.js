@@ -100,6 +100,7 @@ export const query = graphql`
     allContentfulProducts {
       edges {
         node {
+          id
           name
           sku
           size

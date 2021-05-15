@@ -15,7 +15,7 @@ function GridTile(props) {
             {product.item.map((edge,index)=>{
                  const item = edge.node
                 return(
-                    <Col lg={3} xl={3} sm={6} xs={6}>
+                    <Col lg={3} xl={3} sm={12} xs={12}>
                     <div className="grid__tile">
             <div className="gridtrans__img">
                 <img
