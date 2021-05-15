@@ -3,17 +3,27 @@
     height: auto;
     padding: 30px;
 }
-.productSidebar__details h3
+.productSidebar__details h1
 {
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding-bottom: 15px;
-    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #696969;
+    font-family: "poppins";
+    font-style: normal;
 }
 .price
 {
     padding-bottom: 30px;
     font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #333;
+    font-family: "poppins";
+    font-style: normal;
 }
 
 .size__sec {
@@ -52,22 +62,21 @@
     color: #fff;
 }
 
-.add__toCart {
+/* .add__toCart {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
     padding: 4px;
-    margin-top: 40px;
-}
+    margin-top: 20px;
+} */
 
-.counter {
+/* .counter {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100px;
-    /* background: yellow; */
     text-align: center;
     padding: 3px 5px;
     font-size: 22px;
@@ -77,11 +86,10 @@
     outline: none;
     background: transparent;
     font-size: 33px;
-}
+} */
 
-.ADC__sec {
-    padding-left: 30px;
-}
+/* .ADC__sec {
+} */
 
 .ADC__button {
     color: #fff;
@@ -102,7 +110,7 @@
 }
 
 .further__details {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .further__details > table {
     text-align: left;

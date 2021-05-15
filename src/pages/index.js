@@ -96,34 +96,39 @@ const IndexPage = ({data}) => {
 }
 export default IndexPage
 export const query = graphql`
-  {
-    allContentfulProducts {
-      edges {
-        node {
-          id
-          name
-          sku
-          size
-          qty
-          price
-          category
-          galleryImage1 {
-            file {
-              url
-            }
+{
+  allContentfulProducts {
+    edges {
+      node {
+        id
+        name
+        price
+        category
+        productSlug
+        size
+        sku
+        galleryImage1 {
+          fluid(quality: 95) {
+            src
           }
-          galleryImage2 {
-            file {
-              url
-            }
+        }
+        galleryImage2 {
+          fluid(quality: 95) {
+            src
           }
-          galleryImage3 {
-            file {
-              url
-            }
+        }
+        galleryImage3 {
+          fluid(quality: 95) {
+            src
+          }
+        }
+        galleryImage4 {
+          fluid(quality: 95) {
+            src
           }
         }
       }
     }
   }
+}
 `

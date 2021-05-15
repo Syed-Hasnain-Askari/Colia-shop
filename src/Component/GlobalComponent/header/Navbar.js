@@ -98,7 +98,9 @@ function Navbar() {
                             <div className="right__sec">
                                 <SearchIcon />
                                 <FavoriteBorderIcon />
-                                <ShoppingBasketIcon />
+                                <a className="snipcart-checkout"><ShoppingBasketIcon/>
+                                    <span className="snipcart-total-items bg-light"></span>
+                                </a>
                             </div>
                         </header>
                         <nav className="navbar__nav">

@@ -104,8 +104,18 @@
 }
 .grid__tile h3 {
     margin-top: 20px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    font-family: "poppins";
+    color: #696969;
 }
 
 .grid__tile h4 {
-    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 700;
+    color: #333;
+    font-family: "poppins";
+    font-style: normal;
 }

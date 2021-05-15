@@ -8,6 +8,7 @@ import './product.css';
 export default function Products(props) {
 
   const [selectedItem, setSelectedItem] = useState(props.image1)
+  console.log(props.slug)
   const [{basket},dispatch] = useStateValue()
   const Addtocart = () =>{
     dispatch({
@@ -91,6 +92,7 @@ export default function Products(props) {
                     category={props.category}
                     id={props.id}
                     image={props.image1}
+                    slug={props.slug}
                     
                     />
               </Col>

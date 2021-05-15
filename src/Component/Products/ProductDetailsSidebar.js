@@ -20,8 +20,8 @@ function ProductDetailsSidebar(props) {
 
   return (
     <div className="productSidebar__details">
-      <h3>{props.title}</h3>
-      <h4 className="price">{props.price}</h4>
+      <h1>{props.title}</h1>
+      <h4 className="price">$ {props.price}</h4>
       {/* <div className="size__sec">
         <label>Size:</label>
         <button>S</button>
@@ -40,29 +40,12 @@ function ProductDetailsSidebar(props) {
             className="snipcart-add-item ADC__button"
             data-item-id={props.id}
             data-item-price={props.price}
-            data-item-url="https://frosty-goldwasser-fdb81f.netlify.app//"
+            data-item-url={`/Products/${props.slug}`}
             data-item-name={props.title}
             data-item-image={props.image}
           >
-            Add to cart
+          Add to cart
           </button>
-          {/* <div className="Header__summary__line">
-            Number of items: <span className="snipcart-total-items"></span>
-          </div>
-          <div className="Header__summary__line">
-            Total price: <span className="snipcart-total-price"></span>
-          </div> */}
-          {/* <a
-            href="#"
-            className="Product snipcart-add-item"
-            data-item-id={props.id}
-            data-item-price={props.price}
-            data-item-image={props.image1}
-            data-item-name={props.name}
-            data-item-url={`/`}
-          >
-            
-          </a> */}
         </div>
       </div>
       <div className="further__details">
@@ -74,6 +57,10 @@ function ProductDetailsSidebar(props) {
           <tr>
             <th>Categories:</th>
             <td>{props.category}</td>
+          </tr>
+          <tr>
+            <th>TAG:</th>
+            <td>{props.slug}</td>
           </tr>
           <tr>
             <th>Share on:</th>
