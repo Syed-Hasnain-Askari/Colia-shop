@@ -11,7 +11,7 @@ function ControlledCarousel() {
   };
 
   return (
-    <Carousel fade className="mt-5">
+    <Carousel fade>
   <Carousel.Item>
     <img
       className="d-block w-100"

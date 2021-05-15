@@ -1,9 +1,12 @@
 import React from 'react';
 import Layout from '../layout'
+import {Link} from 'gatsby'
 import ProductDetail from '../Products/product'
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 export default function Home({pageContext}) {
     return(
         <Layout>
+            <div className="d-flex justify-content-end mt-5 m-lg-5" ><Link to="/"><KeyboardBackspaceIcon style={{ fontSize: 40, color:"black" }}/></Link></div>
             <ProductDetail
             id={pageContext.Item_Details.id}
             image1={pageContext.Item_Details.galleryImage1.file.url}

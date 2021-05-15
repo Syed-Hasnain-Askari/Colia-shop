@@ -7,12 +7,14 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"
-import '../Component/LaMarque/lamarque.css'
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+import {Link} from 'gatsby'
 
 export default function LaMarque() {
     return (
         <div>
             <Layout>
+            <div className="d-flex justify-content-end mt-5 m-lg-5" ><Link to="/"><KeyboardBackspaceIcon style={{ fontSize: 40, color:"black" }}/></Link></div>
             <div className="LaMarque">
                <div className="about__section">
                <div className="container">

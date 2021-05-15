@@ -14,9 +14,6 @@ exports.createPages = async ({ actions, graphql }) => {
             qty
             price
             category
-            description {
-              description
-            }
             galleryImage1 {
               file {
                 url

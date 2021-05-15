@@ -18,9 +18,6 @@ export const query = graphql`
           size
           qty
           price
-          description {
-            description
-          }
           galleryImage1 {
             file {
               url

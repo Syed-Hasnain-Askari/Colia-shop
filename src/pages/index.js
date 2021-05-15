@@ -16,7 +16,7 @@ const IndexPage = ({data}) => {
             <ControlledCarousel/>
           </div>
           <div className="container image__section">
-            <div className="row border mx-auto">
+            <div className="row mx-auto">
             <Row className="d-flex align-content-center justify-content-sm-end justify-content-lg-center mx-auto m-lg-5">
                 <Col sm={12} xs={12} lg={4} className="ml-5">
                 <StaticImage
@@ -107,9 +107,6 @@ export const query = graphql`
           qty
           price
           category
-          description {
-            description
-          }
           galleryImage1 {
             file {
               url
