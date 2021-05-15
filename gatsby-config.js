@@ -9,6 +9,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
+      resolve: 'gatsby-plugin-snipcartv3',
+      options: {
+        apiKey: 'NjhjOWVlY2MtOGExMy00YWMxLTgyMTUtYzdhODcwMDliYzg0NjM3NTY2MzMzMzgzODYzNjk5'
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

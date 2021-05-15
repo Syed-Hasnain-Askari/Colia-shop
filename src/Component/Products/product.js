@@ -4,6 +4,7 @@ import { Image, Col, Row} from 'react-bootstrap'
 import {useStateValue} from '../Context/StateProvider'
 import ProductDetailsSidebar from './ProductDetailsSidebar'
 import './ProductDetailsSidebar.css'
+import './product.css';
 export default function Products(props) {
 
   const [selectedItem, setSelectedItem] = useState(props.image1)
@@ -21,10 +22,10 @@ export default function Products(props) {
   }
   return (
          <div className="container">
-            <div className="row d-flex justify-content-center">
-              <Row className="m-0 border">
+            <div className="row d-flex justify-content-center product_wrapper">
+              <Row className="m-0">
               <Col xl={8} lg={8} md={8} sm={12} xs={12} className="left__gallery">
-                <Row className="border">
+                <Row>
                   <Col xl={2} lg={2} md={4} sm={4} xs={4}>
                     <Image
                       src={props.image1}
@@ -89,6 +90,8 @@ export default function Products(props) {
                     price={props.price}
                     sku={props.sku}
                     categoty={props.category}
+                    id={props.id}
+                    image={props.image1}
                     
                     />
               </Col>
